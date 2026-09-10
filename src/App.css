@@ -1,0 +1,89 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0f0f14;
+  color: #eee;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #16161d;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navbar-title { color: #a855f7; font-size: 1.4rem; font-weight: bold; }
+.navbar-menu { display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0; }
+.navbar-menu a { color: #eee; text-decoration: none; transition: color 0.2s; }
+.navbar-menu a:hover { color: #a855f7; }
+
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: radial-gradient(circle at top, #1e1b2e, #0f0f14);
+}
+.avatar { font-size: 4rem; margin-bottom: 1rem; }
+.hero h1 { font-size: 2.2rem; margin-bottom: 1rem; color: #fff; }
+.hero p { max-width: 550px; margin: 0 auto 1.5rem; color: #bbb; }
+
+.cta-btn {
+  background: linear-gradient(135deg, #a855f7, #6366f1);
+  color: #fff;
+  border: none;
+  padding: 0.9rem 2rem;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.cta-btn:hover { transform: scale(1.05); }
+
+.skills { padding: 4rem 2rem; max-width: 600px; margin: 0 auto; }
+.skills h2 { text-align: center; margin-bottom: 2rem; color: #fff; }
+.skill-item { margin-bottom: 1.2rem; }
+.skill-name { display: flex; justify-content: space-between; margin-bottom: 0.4rem; font-size: 0.95rem; }
+.skill-bar { background: #2a2a35; border-radius: 10px; height: 10px; overflow: hidden; }
+.skill-fill { background: linear-gradient(135deg, #a855f7, #6366f1); height: 100%; border-radius: 10px; }
+
+.projects { padding: 4rem 2rem; text-align: center; }
+.projects h2 { color: #fff; margin-bottom: 2rem; }
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.project-card {
+  background: #16161d;
+  border-radius: 12px;
+  padding: 1.8rem;
+  text-align: left;
+  border: 1px solid #2a2a35;
+  transition: transform 0.2s;
+}
+.project-card:hover { transform: translateY(-6px); border-color: #a855f7; }
+.project-tag {
+  display: inline-block;
+  background: #a855f733;
+  color: #a855f7;
+  padding: 0.2rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+.project-card h3 { color: #fff; margin: 0.5rem 0; }
+.project-card p { color: #aaa; font-size: 0.9rem; }
+
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #16161d;
+  color: #888;
+  margin-top: 2rem;
+}
